@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AddressBook App</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="container app">
+       <div class="row header">
+          <div class="col-md-4">
+            <h1>AddressBook&nbsp;<small>by: Akshay</small></h1>
+          </div>
+          <div class="col-md-2 col-md-offset-6 text-right">
+            <button id="quickadd" class="btn btn-info" type="button" name="button"><span class="glyphicon glyphicon-plus"></span>&nbsp;Add</button>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+              <div class="row">
+                   <div class="form" id="form">
+                     <form class="form" action="">
+                        <div class="form-group">
+                              <label for="name control-label">NAME</label>
+                              <input class="form-control formFields" type="text" name="name" id="name" placeholder="NAME">
+                        </div>
+                        <div class="form-group">
+                              <label for="name control-label">PHONE</label>
+                              <input class="form-control formFields" type="text" name="name" id="phone" placeholder="PHONE">
+                        </div>  
+                        <div class="form-group">
+                              <label for="name control-label">ADDRESS</label>
+                              <textarea class="form-control formFields" type="text" name="name" id="address" placeholder="ADDRESS"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name control-label">CITY</label>
+                            <input class="form-control formFields" type="text" name="name" id="city" placeholder="CITY">
+                        </div>
+                        <div class="form-group">
+                              <label for="name control-label">Email</label>
+                              <input class="form-control formFields"type="text" name="name" id="email" placeholder="EMAIL">
+                            
+                        </div>
+
+                        <div class="btn-group pull-right">
+                            <button type="button" name="button" id="add" class="btn btn-primary">Add Now</button>
+                            <button type="button" name="button" id="cancel" class="btn btn-danger">Cancel</button>    
+                        </div>  
+                     </form>
+                 </div>
+              </div>
+          </div>
+       </div>
+      
+       <br>
+       <div class="row">
+          <table class="table table-hover text-center">
+            <thead>
+              <tr>
+                <th>
+                   NAME
+                </th>
+                <th>
+                   PHONE
+                </th>
+                <th>
+                   ADDRESS
+                </th>
+                <th>
+                   CITY
+                </th>
+                <th>
+                   EMAIL
+                </th>
+                <th>
+                   ACTION
+                </th>
+              </tr>
+            </thead>
+            <tbody class="display">
+
+
+            </tbody>
+          </table>
+       </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
